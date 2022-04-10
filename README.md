@@ -44,6 +44,12 @@ It can be renamed with geojson extension like it is a geojson which can be read 
 conflate guideposts.py -i data/POTEAUX_DIRECTIONNELS_SUR_SENTIERS_BALISES_EPSG4326_2022_02_14.geojson -o data/guidepost.osm -c data/guidepost.geojson
 ```
 
+Filter the creation
+
+```
+python split_geojson.py data/guidepost.geojson
+```
+
 ## License
 
 The project has an [Apache-2.0 License](LICENSE).

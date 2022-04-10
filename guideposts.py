@@ -3,10 +3,12 @@
 # Extract name and elevation
 source = "Grenoble-Alpes Métropole"
 no_dataset_id = True
+# Overpass API query
 query = [("information", "guidepost")]
-master_tags = ("ref", "operator", "name", "ele")
-max_distance = 20
-duplicate_distance = 0
+# Tags to replace
+master_tags = ("name", "ele")
+# Maximum lookup radius
+max_distance = 50  # m
 
 
 def dataset(fileobj):
